@@ -29,13 +29,14 @@ def hbnb_filters(the_id=None):
     sts = dict([state.name, state] for state in st_objs)
     ams = storage.all('Amenity').values()
     pls = storage.all('Place').values()
-    uss = dict([user.id, "{} {}".format(user.first_name, user.last_name)]
+    ussss = dict([user.id, "{} {}".format(user.first_name, user.last_name)]
                  for user in storage.all('User').values())
     return render_template('1-hbnb.html',
                            sts=sts,
                            ams=ams,
                            pls=pls,
-                           uss=uss, cache_id=uuid.uuid4())
+                           ussss=ussss, cache_id=uuid.uuid4())
+
 
 if __name__ == "__main__":
     """Run the application.
