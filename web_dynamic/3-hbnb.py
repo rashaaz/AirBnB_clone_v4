@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""This script initializes a Flask application for a web service.
+"""This script initializes a Flask application for a web service
 """
 from flask import Flask, render_template, url_for
 from models import storage
