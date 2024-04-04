@@ -39,6 +39,6 @@ def hbnb_filters(the_id=None):
 
 
 if __name__ == "__main__":
-    """Run the application.
+    """Run the application
     """
     app.run(host=host, port=port)
